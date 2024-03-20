@@ -20,6 +20,7 @@ import { Toaster } from "react-hot-toast";
 import { ProtectedRouteForUser } from "./protectedRoute/ProtectedRouteForUser";
 import { ProtectedRouteForAdmin } from "./protectedRoute/ProtectedRouteForAdmin";
 import CategoryPage from "./pages/category/CategoryPage";
+import Aboutus from './pages/about/Aboutuspage';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <ScrollTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/Aboutus" element={<Aboutus />} />
           <Route path="/*" element={<NoPage />} />
           <Route path="/productinfo/:id" element={<ProductInfo />} />
           <Route path="/cart" element={<CartPage />} />

@@ -38,6 +38,10 @@ const Navbar = () => {
                 <Link to={'/allproduct'}>Products</Link>
             </li>
 
+            <li>
+                <Link to={'/Aboutus'}>About Us</Link>
+            </li>
+
             {/* Signup */}
             {!user && (
                 <>
